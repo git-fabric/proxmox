@@ -53,12 +53,12 @@ async function registerWithGateway() {
     tailscale_node: 'fabric-proxmox',
     worker_pool: { total: 0, healthy: 0, workers: [] },
     routes: [
-      { prefix: 'fabric.proxmox', local_pref: 100, description: 'Proxmox VE — virtualization, containers, nodes, storage, snapshots' },
-      { prefix: 'fabric.proxmox.vms', local_pref: 100, description: 'VM management — list, start, stop, reboot, config' },
-      { prefix: 'fabric.proxmox.containers', local_pref: 100, description: 'LXC container management — list, start, stop, status' },
-      { prefix: 'fabric.proxmox.nodes', local_pref: 100, description: 'Node management — list nodes, node status, resources' },
-      { prefix: 'fabric.proxmox.storage', local_pref: 100, description: 'Storage management — list storage, status, volumes' },
-      { prefix: 'fabric.proxmox.snapshots', local_pref: 100, description: 'Snapshot management — list, create, delete VM snapshots' },
+      { prefix: 'fabric.proxmox', local_pref: 100, confidence_floor: 0.7, description: 'Proxmox VE — virtualization, containers, nodes, storage, snapshots' },
+      { prefix: 'fabric.proxmox.vms', local_pref: 100, confidence_floor: 0.7, description: 'VM management — list, start, stop, reboot, config' },
+      { prefix: 'fabric.proxmox.containers', local_pref: 100, confidence_floor: 0.7, description: 'LXC container management — list, start, stop, status' },
+      { prefix: 'fabric.proxmox.nodes', local_pref: 100, confidence_floor: 0.7, description: 'Node management — list nodes, node status, resources' },
+      { prefix: 'fabric.proxmox.storage', local_pref: 100, confidence_floor: 0.7, description: 'Storage management — list storage, status, volumes' },
+      { prefix: 'fabric.proxmox.snapshots', local_pref: 100, confidence_floor: 0.7, description: 'Snapshot management — list, create, delete VM snapshots' },
     ],
   };
 
