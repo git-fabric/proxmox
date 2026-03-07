@@ -1,8 +1,4 @@
-/**
- * @git-fabric/proxmox — FabricApp factory
- * 21 tools: nodes, VMs, containers, storage, tasks, snapshots, cluster
- */
-import { type ProxmoxAdapter } from './adapters/env.js';
+import type { ProxmoxAdapter } from './types.js';
 interface FabricTool {
     name: string;
     description: string;
