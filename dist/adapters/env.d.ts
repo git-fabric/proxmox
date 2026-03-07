@@ -13,11 +13,7 @@
  *   PROXMOX_PORT       — default 8006
  *   PROXMOX_VERIFY_SSL — default false
  */
-export interface ProxmoxAdapter {
-    get(path: string, params?: Record<string, unknown>): Promise<unknown>;
-    post(path: string, data?: Record<string, unknown>): Promise<unknown>;
-    put(path: string, data?: Record<string, unknown>): Promise<unknown>;
-    delete(path: string): Promise<unknown>;
-}
+import type { ProxmoxAdapter } from '../types.js';
+export type { ProxmoxAdapter } from '../types.js';
 export declare function createAdapterFromEnv(): ProxmoxAdapter;
 //# sourceMappingURL=env.d.ts.map
