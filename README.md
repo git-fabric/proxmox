@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/banner.svg" alt="proxmox: VMs, containers, nodes, storage and snapshots via MCP" width="100%"></p>
+
 # @git-fabric/proxmox
 
 Proxmox VE fabric -- a self-contained autonomous MCP server for Proxmox Virtual Environment management. Part of the [git-fabric](https://github.com/git-fabric) ecosystem.
@@ -127,3 +129,8 @@ node bin/cli.js
 ## License
 
 MIT
+
+<!-- org-footer -->
+---
+
+<p align="center"><sub>Part of <a href="https://github.com/git-fabric">git-fabric</a> · composable fabric apps for Git-native infrastructure · built by <a href="https://github.com/ry-ops">ry-ops</a></sub></p>
